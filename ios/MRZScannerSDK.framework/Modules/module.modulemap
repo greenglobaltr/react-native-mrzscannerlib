@@ -1,0 +1,6 @@
+framework module MRZScannerSDK {
+  umbrella header "MRZScannerSDK.h"
+
+  export *
+  module * { export * }
+}

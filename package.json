@@ -1,0 +1,28 @@
+{
+  "name": "react-native-mrzscannerlib",
+  "version": "1.3.11",
+  "description": "MRZ Scanner reads all machine-readable zones on traveling documents following the ICAO 9303 Specification on Passports (2 – lines) for TD3 size Machine Readable Passports; MRV-B Visas (2 - lines) as described in part 7 of ICAO 9303 documentation; and ID cards (3 – lines) for TD1 size Machine Readable Travel Documents. The configuration supports OCR-B characters from ISO 1073-2 for use in MRTDs.",
+  "main": "index.js",
+  "homepage": "https://mrzscanner.com/",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react-native",
+    "mrz",
+    "scanner",
+    "ocr",
+    "passport"
+  ],
+  "author": "Scansolutions",
+  "license": "MIT",
+  "peerDependencies": {
+      "react": ">=16.8.1",
+      "react-native": ">=0.60.0-rc.0 <1.0.x"
+  },
+  "devDependencies": {
+      "react": "^16.9.0",
+      "react-native": "^0.61.5",
+      "metro-react-native-babel-preset": "^0.54.1"
+  }
+}

@@ -1,0 +1,48 @@
+repositories {
+    flatDir {
+        dirs "mrzlibs"
+    }
+}
+
+buildscript {
+    repositories {
+        jcenter()
+        google()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.6.1'
+    }
+}
+
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 26
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+    }
+    lintOptions {
+        abortOnError false
+    }
+}
+
+repositories {
+    mavenCentral()
+    google()
+    jcenter()
+    maven {
+        // All of React Native (JS, Android binaries) is installed from npm
+        url "$rootDir/../node_modules/react-native/android"
+    }
+}
+
+dependencies {
+    implementation 'com.facebook.react:react-native:0.+'
+    implementation fileTree(dir: "mrzlibs", include: ["*.aar"])
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+}
